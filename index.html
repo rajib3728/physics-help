@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Physics help</title>
+    <link rel="shortcut icon" type="image/png" href="logo.png">
+    <!-- bootstrap 5 css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <!-- BOX ICONS CSS-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      
+    </style>
+  </head>
+
+  <body>
+  <!--<a style="margin-left: 90%;margin-right: 0%; padding-left: 4px;padding-right: 4px;background-color: blueviolet; color: white; border-radius: 15px;border-style: solid; border-width: 2px; border-color: black;" href="login.html">Register/login</a>-->  
+    <!-- Side-Nav -->
+    <div
+      class="side-navbar active-nav d-flex justify-content-between flex-wrap flex-column"
+      id="sidebar">
+     
+      <ul class="nav flex-column text-white w-100">
+        <a href="#" class="nav-link h3 text-white my-2">
+          Menu 
+        </a>
+        <li href="#" class="nav-link">
+          <i class="bx bxs-dashboard"></i>
+          <a class="mx-2" style="text-decoration: none; color: white;" href="about.html">About us</a>
+        </li>
+        <li href="#" class="nav-link">
+          <i class="bx bxs-contact"></i>
+          <a class="mx-2" style="text-decoration: none; color: white;" href="profile.html">Dev profile</a>
+        </li>
+        <li class="nav-link">
+          <i class="bx bx-conversation"></i>
+          <a class="mx-2" style="text-decoration: none; color: white;" href="contact.html">Contact</a>
+        </li>
+      </ul>
+     
+      <span href="#" class="nav-link h4 w-100 mb-5">
+        <a href="https://www.instagram.com/rajibpaul50/"><i class="bx bxl-instagram-alt text-white"></i></a>
+        <a href="https://www.youtube.com/channel/UCAOU5SZ8vN-lFly3ZD3pDyA"><i class="bx bxl-youtube px-2 text-white"></i></a>
+        <a href="https://www.facebook.com/phosciphi/"><i class="bx bxl-facebook text-white"></i></a>
+      </span>
+    </div>
+
+    <!-- Main Wrapper -->
+    <div class="p-1 my-container active-cont">
+      <!-- Top Nav -->
+      <nav class="navbar top-navbar navbar-light bg-light px-5">
+        <a class="btn border-0" id="menu-btn"><i class="bx bx-menu"></i></a>
+      </nav>
+      <!--End Top Nav -->
+      <br>
+      <a style="margin-left: 90%;margin-right: 0%;padding: 5px; ;background-color: blueviolet; color: white; border-radius: 25px;border-style: solid; border-width: 2px; border-color: black;" href="register.html">Register</a>
+      <h3 class="text-dark p-3"><img src="img30.jpg" style="width: 130px; height:130px;margin-right: 10px;border-radius: 25px;">Physics Help</h3>
+     
+      <p class="px-3">"The laws of physics is the canvas God laid down on which to paint his masterpiece."</p>
+      <p class="px-3">- Dan Brown.</p>
+    </div>
+
+    <!-- bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <!-- custom js -->
+    <script>
+      var menu_btn = document.querySelector("#menu-btn");
+      var sidebar = document.querySelector("#sidebar");
+      var container = document.querySelector(".my-container");
+      menu_btn.addEventListener("click", () => {
+        sidebar.classList.toggle("active-nav");
+        container.classList.toggle("active-cont");
+      });
+    </script>
+    <center>
+        <table>
+            <tr>
+                <td>
+    <div style=" width: 350px;
+    height:350px;
+    border-style: solid;
+    border-color: white;
+    border-width: 5px;
+    margin-top: 50px;
+    background-color:white;
+    border-radius: 15px;
+    box-shadow: 0 0 25px 0px black ;">
+      <center><img src="img2.jpg" style="width: 300px; height:200px"></center>  
+       <center><h2>Rest and motion</h2></center> 
+       <button style="margin-left: 50px;color: white; background-color: green;" onclick="fun1()">Subscribe</button>
+    </div>
+</td>
+<td>
+    <div style=" width: 350px;
+    height:350px;
+    border-style: solid;
+    border-color: white;
+    border-width: 5px;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color:white;
+    border-radius: 15px;
+    box-shadow: 0 0 25px 0px black ;">
+      <center><img src="img1.png" style="width: 300px; height:200px"></center>  
+       <center><h2>Newton's law of motion</h2></center> 
+       <button style="margin-left: 50px;color: white; background-color: green;" onclick="fun2()">Subscribe</button>
+    </div>
+</td>
+<td>
+    <div style=" width: 350px;
+    height:350px;
+    border-style: solid;
+    border-color: white;
+    border-width: 5px;
+    margin-top: 50px;
+    background-color:white;
+    border-radius: 15px;
+    box-shadow: 0 0 25px 0px black ;">
+      <center><img src="img3.png" style="width: 300px; height:200px"></center>  
+       <center><h2>Friction</h2></center> 
+       <button style="margin-left: 50px;color: white; background-color: green;" onclick="fun3()">Subscribe</button>
+    </div>  
+</td>
+</tr>
+<tr>
+    <td>
+<div style=" width: 350px;
+height:350px;
+border-style: solid;
+border-color: white;
+border-width: 5px;
+margin-top: 50px;
+background-color:white;
+border-radius: 15px;
+box-shadow: 0 0 25px 0px black ;">
+<center><img src="img4.png" style="width: 300px; height:200px"></center>  
+<center><h2>Circular motion</h2></center> 
+<button style="margin-left: 50px; color: white; background-color: green;" onclick="fun4()">Subscribe</button>
+</div>
+</td>
+<td>
+<div style=" width: 350px;
+height:350px;
+border-style: solid;
+border-color: white;
+border-width: 5px;
+margin-top: 50px;
+margin-left: 20px;
+margin-right: 20px;
+background-color:white;
+border-radius: 15px;
+box-shadow: 0 0 25px 0px black ;">
+<center><img src="img5.png" style="width: 300px; height:200px"></center>  
+<center><h2>Work and energy</h2></center> 
+<button style="margin-left: 50px;color: white; background-color: green;" onclick="fun5()">Subscribe</button>
+</div>
+</td>
+<td>
+<div style=" width: 350px;
+height:350px;
+border-style: solid;
+border-color: white;
+border-width: 5px;
+margin-top: 50px;
+background-color:white;
+border-radius: 15px;
+box-shadow: 0 0 25px 0px black ;">
+<center><img src="img6.jpg" style="width: 300px; height:200px"></center>  
+<center><h2>Center of mass</h2></center> 
+<button style="margin-left: 50px;color: white; background-color: green;" onclick="fun6()">Subscribe</button>
+</div>  
+</td>
+</tr>
+<tr>
+    <td>
+<div style=" width: 350px;
+height:350px;
+border-style: solid;
+border-color: white;
+border-width: 5px;
+margin-top: 50px;
+background-color:white;
+border-radius: 15px;
+box-shadow: 0 0 25px 0px black ;">
+<center><img src="img7.png" style="width: 300px; height:200px"></center>  
+<center><h2>Gravitation</h2></center> 
+<button style="margin-left: 50px; color: white; background-color: green;" onclick="fun7()">Subscribe</button>
+</div>
+</td>
+<td>
+<div style=" width: 350px;
+height:350px;
+border-style: solid;
+border-color: white;
+border-width: 5px;
+margin-top: 50px;
+margin-left: 20px;
+margin-right: 20px;
+background-color:white;
+border-radius: 15px;
+box-shadow: 0 0 25px 0px black ;">
+<center><img src="img8.jpg" style="width: 300px; height:200px"></center>  
+<center><h2>Rotational Mechanics</h2></center> 
+<button style="margin-left: 50px;color: white; background-color: green;" onclick="fun8()">Subscribe</button>
+</div>
+</td>
+<td>
+<div style=" width: 350px;
+height:350px;
+border-style: solid;
+border-color: white;
+border-width: 5px;
+margin-top: 50px;
+background-color:white;
+border-radius: 15px;
+box-shadow: 0 0 25px 0px black ;">
+<center><img src="img9.png" style="width: 300px; height:200px"></center>  
+<center><h2>Simple harmonic motion</h2></center> 
+<button style="margin-left: 50px;color: white; background-color: green;" onclick="fun9()">Subscribe</button>
+</div>  
+</td>
+</tr>
+<tr>
+    <td>
+<div style=" width: 350px;
+height:350px;
+border-style: solid;
+border-color: white;
+border-width: 5px;
+margin-top: 50px;
+background-color:white;
+border-radius: 15px;
+box-shadow: 0 0 25px 0px black ;">
+<center><img src="img10.png" style="width: 300px; height:200px"></center>  
+<center><h2>Fluid Mechanics</h2></center> 
+<button style="margin-left: 50px; color: white; background-color: green;" onclick="fun10()">Subscribe</button>
+</div>
+</td>
+<td>
+<div style=" width: 350px;
+height:350px;
+border-style: solid;
+border-color: white;
+border-width: 5px;
+margin-top: 50px;
+margin-left: 20px;
+margin-right: 20px;
+background-color:white;
+border-radius: 15px;
+box-shadow: 0 0 25px 0px black ;">
+<center><img src="img11.png" style="width: 300px; height:200px"></center>  
+<center><h2>Mechanical Property of matter</h2></center> 
+<button style="margin-left: 50px;color: white; background-color: green;" onclick="fun11()">Subscribe</button>
+</div>
+</td>
+<td>
+<div style=" width: 350px;
+height:350px;
+border-style: solid;
+border-color: white;
+border-width: 5px;
+margin-top: 50px;
+background-color:white;
+border-radius: 15px;
+box-shadow: 0 0 25px 0px black ;">
+<center><img src="img12.png" style="width: 300px; height:200px"></center>  
+<center><h2>Wave motion</h2></center> 
+<button style="margin-left: 50px;color: white; background-color: green;" onclick="fun12()">Subscribe</button>
+</div>  
+</td>
+</tr>
+<tr>
+    <td>
+<div style=" width: 350px;
+height:350px;
+border-style: solid;
+border-color: white;
+border-width: 5px;
+margin-top: 50px;
+background-color:white;
+border-radius: 15px;
+box-shadow: 0 0 25px 0px black ;">
+<center><img src="img13.jpg" style="width: 300px; height:200px"></center>  
+<center><h2>Sound</h2></center> 
+<button style="margin-left: 50px; color: white; background-color: green;" onclick="fun13()">Subscribe</button>
+</div>
+</td>
+<td>
+<div style=" width: 350px;
+height:350px;
+border-style: solid;
+border-color: white;
+border-width: 5px;
+margin-top: 50px;
+margin-left: 20px;
+margin-right: 20px;
+background-color:white;
+border-radius: 15px;
+box-shadow: 0 0 25px 0px black ;">
+<center><img src="img0.jpg" style="width: 300px; height:200px"></center>  
+<center><h2>Light</h2></center> 
+<button style="margin-left: 50px;color: white; background-color: green;" onclick="fun14()">Subscribe</button>
+</div>
+</td>
+<td>
+<div style=" width: 350px;
+height:350px;
+border-style: solid;
+border-color: white;
+border-width: 5px;
+margin-top: 50px;
+background-color:white;
+border-radius: 15px;
+box-shadow: 0 0 25px 0px black ;">
+<center><img src="img14.jpg" style="width: 300px; height:200px"></center>  
+<center><h2>Heat</h2></center> 
+<button style="margin-left: 50px;color: white; background-color: green;" onclick="fun15()">Subscribe</button>
+</div>  
+</td>
+</tr>
+<tr>
+  <td>
+<div style=" width: 350px;
+height:350px;
+border-style: solid;
+border-color: white;
+border-width: 5px;
+margin-top: 50px;
+background-color:white;
+border-radius: 15px;
+box-shadow: 0 0 25px 0px black ;">
+<center><img src="img15.jpg" style="width: 300px; height:200px"></center>  
+<center><h2>Thermodynamics</h2></center> 
+<button style="margin-left: 50px; color: white; background-color: green;" onclick="fun16()">Subscribe</button>
+</div>
+</td>
+<td>
+<div style=" width: 350px;
+height:350px;
+border-style: solid;
+border-color: white;
+border-width: 5px;
+margin-top: 50px;
+margin-left: 20px;
+margin-right: 20px;
+background-color:white;
+border-radius: 15px;
+box-shadow: 0 0 25px 0px black ;">
+<center><img src="img16.png" style="width: 300px; height:200px"></center>  
+<center><h2>Electric field and potential</h2></center> 
+<button style="margin-left: 50px;color: white; background-color: green;" onclick="fun17()">Subscribe</button>
+</div>
+</td>
+<td>
+<div style=" width: 350px;
+height:350px;
+border-style: solid;
+border-color: white;
+border-width: 5px;
+margin-top: 50px;
+background-color:white;
+border-radius: 15px;
+box-shadow: 0 0 25px 0px black ;">
+<center><img src="img17.jpg" style="width: 300px; height:200px"></center>  
+<center><h2>Capacitor</h2></center> 
+<button style="margin-left: 50px;color: white; background-color: green;" onclick="fun18()">Subscribe</button>
+</div>  
+</td>
+</tr>
+<tr>
+  <td>
+<div style=" width: 350px;
+height:350px;
+border-style: solid;
+border-color: white;
+border-width: 5px;
+margin-top: 50px;
+background-color:white;
+border-radius: 15px;
+box-shadow: 0 0 25px 0px black ;">
+<center><img src="img18.png" style="width: 300px; height:200px"></center>  
+<center><h2>Electric current in conductor</h2></center> 
+<button style="margin-left: 50px; color: white; background-color: green;" onclick="fun19()">Subscribe</button>
+</div>
+</td>
+<td>
+<div style=" width: 350px;
+height:350px;
+border-style: solid;
+border-color: white;
+border-width: 5px;
+margin-top: 50px;
+margin-left: 20px;
+margin-right: 20px;
+background-color:white;
+border-radius: 15px;
+box-shadow: 0 0 25px 0px black ;">
+<center><img src="img19.jpg" style="width: 300px; height:200px"></center>  
+<center><h2>Magnetic field</h2></center> 
+<button style="margin-left: 50px;color: white; background-color: green;" onclick="fun20()">Subscribe</button>
+</div>
+</td>
+<td>
+<div style=" width: 350px;
+height:350px;
+border-style: solid;
+border-color: white;
+border-width: 5px;
+margin-top: 50px;
+background-color:white;
+border-radius: 15px;
+box-shadow: 0 0 25px 0px black ;">
+<center><img src="img20.jpg" style="width: 300px; height:200px"></center>  
+<center><h2>Permanent magnet</h2></center> 
+<button style="margin-left: 50px;color: white; background-color: green;" onclick="fun21()">Subscribe</button>
+</div>  
+</td>
+</tr>
+<tr>
+  <td>
+<div style=" width: 350px;
+height:350px;
+border-style: solid;
+border-color: white;
+border-width: 5px;
+margin-top: 50px;
+background-color:white;
+border-radius: 15px;
+box-shadow: 0 0 25px 0px black ;">
+<center><img src="img21.jpg" style="width: 300px; height:200px"></center>  
+<center><h2>Electromagnetic induction</h2></center> 
+<button style="margin-left: 50px; color: white; background-color: green;" onclick="fun22()">Subscribe</button>
+</div>
+</td>
+<td>
+<div style=" width: 350px;
+height:350px;
+border-style: solid;
+border-color: white;
+border-width: 5px;
+margin-top: 50px;
+margin-left: 20px;
+margin-right: 20px;
+background-color:white;
+border-radius: 15px;
+box-shadow: 0 0 25px 0px black ;">
+<center><img src="img22.png" style="width: 300px; height:200px"></center>  
+<center><h2>Alternating current</h2></center> 
+<button style="margin-left: 50px;color: white; background-color: green;" onclick="fun23()">Subscribe</button>
+</div>
+</td>
+<td>
+<div style=" width: 350px;
+height:350px;
+border-style: solid;
+border-color: white;
+border-width: 5px;
+margin-top: 50px;
+background-color:white;
+border-radius: 15px;
+box-shadow: 0 0 25px 0px black ;">
+<center><img src="img23.png" style="width: 300px; height:200px"></center>  
+<center><h2>Electromagnetic wave</h2></center> 
+<button style="margin-left: 50px;color: white; background-color: green;" onclick="fun24()">Subscribe</button>
+</div>  
+</td>
+</tr>
+<tr>
+  <td>
+<div style=" width: 350px;
+height:350px;
+border-style: solid;
+border-color: white;
+border-width: 5px;
+margin-top: 50px;
+background-color:white;
+border-radius: 15px;
+box-shadow: 0 0 25px 0px black ;">
+<center><img src="img24.jpg" style="width: 300px; height:200px"></center>  
+<center><h2>Quantum Physics</h2></center> 
+<button style="margin-left: 50px; color: white; background-color: green;" onclick="fun25()">Subscribe</button>
+</div>
+</td>
+<td>
+<div style=" width: 350px;
+height:350px;
+border-style: solid;
+border-color: white;
+border-width: 5px;
+margin-top: 50px;
+margin-left: 20px;
+margin-right: 20px;
+background-color:white;
+border-radius: 15px;
+box-shadow: 0 0 25px 0px black ;">
+<center><img src="img25.jpg" style="width: 300px; height:200px"></center>  
+<center><h2>Atomic physics</h2></center> 
+<button style="margin-left: 50px;color: white; background-color: green;" onclick="fun26()">Subscribe</button>
+</div>
+</td>
+<td>
+<div style=" width: 350px;
+height:350px;
+border-style: solid;
+border-color: white;
+border-width: 5px;
+margin-top: 50px;
+background-color:white;
+border-radius: 15px;
+box-shadow: 0 0 25px 0px black ;">
+<center><img src="img26.png" style="width: 300px; height:200px"></center>  
+<center><h2>Semiconductor and electronics</h2></center> 
+<button style="margin-left: 50px;color: white; background-color: green;" onclick="fun27()">Subscribe</button>
+</div>  
+</td>
+</tr>
+<tr>
+  <td>
+<div style=" width: 350px;
+height:350px;
+border-style: solid;
+border-color: white;
+border-width: 5px;
+margin-top: 50px;
+background-color:white;
+border-radius: 15px;
+box-shadow: 0 0 25px 0px black ;">
+<center><img src="img27.jpg" style="width: 300px; height:200px"></center>  
+<center><h2>Special theory of relativity</h2></center> 
+<button style="margin-left: 50px; color: white; background-color: green;" onclick="fun28()">Subscribe</button>
+</div>
+</td>
+<td>
+<div style=" width: 350px;
+height:350px;
+border-style: solid;
+border-color: white;
+border-width: 5px;
+margin-top: 50px;
+margin-left: 20px;
+margin-right: 20px;
+background-color:white;
+border-radius: 15px;
+box-shadow: 0 0 25px 0px black ;">
+<center><img src="img28.jpg" style="width: 300px; height:200px"></center>  
+<center><h2>Time</h2></center> 
+<button style="margin-left: 50px;color: white; background-color: green;" onclick="fun29()">Subscribe</button>
+</div>
+</td>
+<td>
+<div style=" width: 350px;
+height:350px;
+border-style: solid;
+border-color: white;
+border-width: 5px;
+margin-top: 50px;
+background-color:white;
+border-radius: 15px;
+box-shadow: 0 0 25px 0px black ;">
+<center><img src="img29.png" style="width: 300px; height:200px"></center>  
+<center><h2>Cosmic physics</h2></center> 
+<button style="margin-left: 50px;color: white; background-color: green;" onclick="fun30()">Subscribe</button>
+</div>  
+</td>
+</tr>
+<tr>
+  <td>
+<div style=" width: 350px;
+height:350px;
+border-style: solid;
+border-color: white;
+border-width: 5px;
+margin-top: 50px;
+background-color:white;
+border-radius: 15px;
+box-shadow: 0 0 25px 0px black ;">
+<center><img src="img31.jpg" style="width: 300px; height:200px"></center>  
+<center><h2>Theory of gasses</h2></center> 
+<button style="margin-left: 50px; color: white; background-color: green;" onclick="fun31()">Subscribe</button>
+</div>
+</td>
+<td>
+<div style=" width: 350px;
+height:350px;
+border-style: solid;
+border-color: white;
+border-width: 5px;
+margin-top: 50px;
+margin-left: 20px;
+margin-right: 20px;
+background-color:white;
+border-radius: 15px;
+box-shadow: 0 0 25px 0px black ;">
+<center><img src="img32.jpg" style="width: 300px; height:200px"></center>  
+<center><h2>Some imprtant book of physics and more</h2></center> 
+<button style="margin-left: 50px;color: white; background-color: green;" onclick="fun32()">Subscribe</button>
+</div>
+</td>
+
+</tr>
+<br>
+<br>
+</table>
+</center>
+<script src="myscripts.js"></script>
+  </body>
+</html>

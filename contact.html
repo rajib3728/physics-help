@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Page</title>
+  <link rel="shortcut icon" type="image/png" href="logo.png">
+  <style>
+    #statement
+    {
+      width: 500px;
+      height: 80px;
+    }
+    #st1
+    {
+      margin-top: 50px;
+      width: 500px;
+      height:400px;
+      border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px 8px 10px #888888;
+  border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <center>
+    <h1 style="background-color: grey; color: wheat; padding-left: 40%;padding-right: 40%;padding-top: 50px; padding-bottom: 50px;margin-top:0%;">Contact us</h1>
+  <div id="st1">
+  <form  method="post" name="google-sheet">
+    <br>
+    <br>
+    <br>
+    <label for="name" >Name </label>
+    <input type="text " id="name" placeholder="Enter name" name="name" required=""/>
+    <br>
+    <br>
+    <label for="gmail" >Gmail id </label>
+    <input type="text" id="gmail" placeholder="Example@gmail.com" name="gmail" required=""/>
+    <br>
+    <br>
+    <label for="number" >Mobile number </label>
+    <input type="text " id="number" placeholder="mobile number" name="number" required=""/>
+    <br>
+    <br>
+    <p>describe your statement</p>
+    <input type="text" id="statement" placeholder="your statement" name="statement" required=""/>
+    <br>
+    <br>
+    <input type="submit" name="submit">
+  </div>
+</center>
+<br>
+<hr>
+follow us:
+<hr>
+
+<img src="facebook.png" width="50px" height="52px" onclick="link1()" style="margin-top: 5px; transform: translateX(4px);">
+<img src="instrag.png" width="50px" height="52px" onclick="link2()" style="margin-top: 5px;">
+<img src="linkdin.png" width="39px" height="34px" onclick="link3()" style="margin-bottom: 10px;">
+<img src="youtube.jpg" width="43px" height="37px" style="margin-left: 8px; margin-bottom: 10px;" onclick="link4()">
+<script>
+        function link1()
+        {
+            window.open("https://www.facebook.com/phosciphi/");
+        }
+        function link2()
+        {
+            window.open("https://www.instagram.com/rajibpaul50/");
+        }
+        function link3()
+        {
+            window.open("http://www.linkedin.com/in/rajib-paul-07162a1a6");
+        }
+        function link4()
+        {
+            window.open("https://www.youtube.com/channel/UCAOU5SZ8vN-lFly3ZD3pDyA");
+        }
+        
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbzH37HcDkAwdw6OuXYXAB23y3wcdF4bNfWnxvSNF7Dy_p41yX4/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+            })
+          
+</script>   
+</body>
+</html>

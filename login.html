@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="shortcut icon" type="image/png" href="logo.png">
+    <style>
+        #st1
+        {   background-color:white ;
+            width: 600px;
+            height:400px;
+            border-radius: 8px;
+            border: 1px solid;
+            padding: 10px;
+            box-shadow: 5px 10px 8px 10px #888888;
+            background-image:url("img30.jpg");
+        }
+       /* body
+        {
+            background-image: url("img30.jpg");
+            background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+        }*/
+    </style>
+</head>
+<body style="background-color:white;">
+    <center>
+        <br>
+        <br>
+        <h1>Login Page</h1>
+        <div id="st1">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <label for="gmail"  style="color: white;"> given id </label>
+    <input type="text" id="gmail1" placeholder="Enter given id " required="">
+    <br>
+    <br>
+    <label for="password" style="color: white;">password</label>
+    <input type="text " id="password1" placeholder="Enter given password" required="">
+    <br>
+    <br>
+    <br>
+    <button onclick="valueSender()">Submit</button>
+    <br>
+    <br>
+    <br>
+    <a href="register.html" style=" color:red;">Not Registered?</a>
+         </div>
+    </center>
+    <script src="myscripts.js"></script>
+<script>
+    function valueSender()
+    {
+        var a=document.getElementById("gmail1").value;
+        var b=document.getElementById("password1").value;
+        if(a=="Pqr589" && b=="Pqr589")
+        {
+            window.open("more.html");
+        }
+        else if(a=="" && b=="")
+        {
+         alert("please fill it")
+        }
+        else
+        {
+            alert("wrong id and password!");
+        }
+    }
+</script>
+ 
+</body>
+</html>

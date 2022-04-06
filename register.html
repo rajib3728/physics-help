@@ -1,0 +1,89 @@
+<?php
+$host="localhost";
+$user="root";
+$password="";
+$db="Physics";
+mysql_connect($host,$user,$password);
+$mysql_select_db($db);
+if
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" type="image/png" href="logo.png">
+  <title>Register Page</title>
+  <style>
+   
+       body
+        {
+            background-image: url("img0.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;  
+            background-size: cover;
+  
+        }
+        #st1
+    {
+      background-color:white ;
+            width: 600px;
+            height:400px;
+            border-radius: 8px;
+            border: 1px solid;
+            padding: 10px;
+        
+            opacity: 0.95;
+                   
+    }
+  </style>
+</head>
+<body>
+  <center>
+    <br>
+    <br>
+    <h1 style="color: white;">Registration Form</h1>
+  <div id="st1">
+  <form  method="post"  name="google-sheet">
+    <br>
+    <br>
+    <br>
+    <label for="name" >Name </label>
+    <input type="text " id="name" name="name" placeholder="Enter name" value="" required=""/>
+    <br>
+    <br>
+    <label for="gmail" >Gmail id </label>
+    <input type="text" id="gmail" name="gmail" placeholder="Example@gmail.com" value="" required=""/>
+    <br>
+    <br>
+    <label for="number" >Mobile number </label>
+    <input type="text " id="number" name="number" placeholder="mobile number" value="" required=""/>
+    <br>
+    <br>
+    <label for="password" >password</label>
+    <input type="text " id="password" name="password" placeholder="abc@1234" value="" required=""/>
+    <br>
+    <br>
+    <input type="submit" name="submit" >
+  </form>
+  <br>
+  <br>
+  
+  <a href="index.html" style="color: black;">Back home</a>
+</div>
+</center>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyJiYBbFAgHrViDQ0bIA5xEroJ9qlI6yOpU0naqnPytsW4A8VJMa889xZPcSlI9l6Hh/exec'
+  const form = document.forms['google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => alert("Thanks for Registering.Your id and password is Pqr589.Don't share it."))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
